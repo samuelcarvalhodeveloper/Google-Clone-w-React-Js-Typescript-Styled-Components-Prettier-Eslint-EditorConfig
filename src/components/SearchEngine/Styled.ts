@@ -92,10 +92,11 @@ const SearchEngineStyled = styled.main`
         background: #f8f9fa;
         font-size: 1.4rem;
         border-radius: 0.4rem;
+        cursor: pointer;
       }
 
       .main__button:hover {
-        box-shadow: 0 0 .5rem 0 rgb(32 33 36 / 28%)
+        box-shadow: 0 0 .5rem 0 rgb(32 33 36 / 28%);
       }
     }
   }
