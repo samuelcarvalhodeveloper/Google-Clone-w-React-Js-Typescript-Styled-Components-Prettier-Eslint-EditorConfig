@@ -28,7 +28,7 @@ const FooterStyled = styled.footer`
           color: #70757a;
           text-decoration: none;
           padding: 1.5rem;
-          display: block;
+          display: inline-block;
         }
 
       .footer__link:hover {
