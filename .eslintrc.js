@@ -23,5 +23,6 @@ module.exports = {
     "react/jsx-closing-bracket-location": 0,
     "react/no-unescaped-entities": 0,
     "operator-linebreak": 0,
+    "linebreak-style": 0,
   },
 };

@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import SearchEngineStyled from "./Styled";
 import logo from "../../assets/img/GoogleLogo.png";
 import label from "../../assets/img/Search.svg";
@@ -6,69 +5,63 @@ import mic from "../../assets/img/Mic.svg";
 import camera from "../../assets/img/Camera.svg";
 
 function SearchEngine() {
-  const mainSearchRef = useRef<HTMLDivElement>(null);
-
   return (
     <SearchEngineStyled>
       <div className="main__container">
-        <img
-          src={logo}
-          alt="Google logo"
-        />
-
+        <div className="main__logo">
+          <img
+            src={logo}
+            alt="Google logo"
+          />
+        </div>
         <form
           action="#"
           className="main__form">
-          <div
-            className="main__search"
-            ref={mainSearchRef}>
+          <div className="main__content">
             <div className="main__label">
               <img
                 src={label}
-                alt="search__label"
+                alt=""
+                width="10px"
               />
             </div>
             <input
               type="text"
               className="main__input"
-              autoComplete="none"
-              onFocus={() => {
-                if (mainSearchRef.current) {
-                  mainSearchRef.current.style.boxShadow =
-                    "0 1px 6px rgb(32 33 36 / 28%)";
-                }
-              }}
+              autoComplete="off"
+              disabled
             />
             <button
               type="button"
-              className="main__mic">
+              className="main__action">
               <img
                 src={mic}
-                alt="microphone"
-                className="main__action"
+                alt=""
+                width="10px"
               />
             </button>
             <button
               type="button"
-              className="main__camera">
+              className="main__action">
               <img
                 src={camera}
-                alt="camera"
-                className="main__action"
+                alt=""
+                width="10px"
               />
             </button>
           </div>
         </form>
-        <div className="main__surprise">
+
+        <div className="main__lucky">
           <button
-            type="button"
-            className="main__button">
+            className="main__redirect"
+            type="button">
             Google Search
           </button>
           <button
-            type="button"
-            className="main__button">
-            I'm Feeling lucky
+            className="main__redirect"
+            type="button">
+            I'm Feeling Lucky
           </button>
         </div>
       </div>

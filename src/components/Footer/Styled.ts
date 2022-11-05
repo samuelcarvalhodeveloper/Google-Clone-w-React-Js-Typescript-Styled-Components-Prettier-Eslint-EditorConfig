@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const FooterStyled = styled.footer`
   min-width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   background: #f2f2f2;
   color: #70757a;
 
   .footer__region {
-    padding: 1.5rem 3rem;
+    padding: 1.6rem 3rem;
     border-bottom: 1px solid rgba(32, 33, 36, .1);
 
     .footer__us {
@@ -19,7 +19,7 @@ const FooterStyled = styled.footer`
 
   .footer__container {
       width: 100%;
-      padding: 1.5rem 2.5rem;
+      padding: .1rem 2.5rem;
       display: flex;
       justify-content: space-between;
     .footer__more {
@@ -33,6 +33,7 @@ const FooterStyled = styled.footer`
         text-decoration: none;
         padding: 1.5rem;
         display: inline-block;
+        text-align: center;
       }
 
       .footer__link:hover {
