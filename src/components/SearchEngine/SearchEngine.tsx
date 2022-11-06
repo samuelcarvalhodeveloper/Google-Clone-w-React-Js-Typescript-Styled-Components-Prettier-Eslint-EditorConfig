@@ -29,7 +29,6 @@ function SearchEngine() {
               type="text"
               className="main__input"
               autoComplete="off"
-              disabled
             />
             <button
               type="button"
