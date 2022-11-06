@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SearchEngineStyled = styled.main`
-  height: 100%;
+  height: calc(100vh - 15.5rem);
   min-height: 60rem;
   width: 100%;
   max-width: 63rem;
