@@ -4,7 +4,7 @@ function Footer() {
   return (
     <FooterStyled>
       <div className="footer__region">
-        <p className="footer__us">United States</p>
+        <p className="footer__country">United States</p>
       </div>
       <div className="footer__container">
         <div className="footer__more">

@@ -4,9 +4,6 @@ const HeaderStyled = styled.header`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  left: 0;
 
   .header__container {
     display: flex;

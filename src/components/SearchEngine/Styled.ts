@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const SearchEngineStyled = styled.main`
-  height: 100vh;
+  height: 100%;
+  min-height: 60rem;
   width: 100%;
   max-width: 63rem;
   margin: 0 auto;
@@ -11,12 +12,13 @@ const SearchEngineStyled = styled.main`
   padding: 0 2rem;
 
   .main__container {
-    margin: 45% 0;
+    margin-top: 35%;
     width: 100%;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    gap: 2.3rem;
+    gap: 3rem;
+
 
     .main__logo {
       display: flex;
@@ -53,6 +55,7 @@ const SearchEngineStyled = styled.main`
           width: 100%;
           border: none;
           background: none;
+          color: rgba(0,0,0,.87);
         }
 
         .main__action {
@@ -74,7 +77,7 @@ const SearchEngineStyled = styled.main`
     }
 
     .main__form:hover {
-      box-shadow: 0 1px 6px rgba(32,33,36,.28);
+      box-shadow: 0 .1rem .6rem rgba(32,33,36,.28);
     }
 
     .main__lucky {
@@ -95,8 +98,8 @@ const SearchEngineStyled = styled.main`
       }
 
       .main__redirect:hover {
-        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-        border: 1px solid #dadce0;
+        box-shadow: 0 .1rem .1rem rgb(0 0 0 / 10%);
+        border: .1rem solid #dadce0;
       }
     }
   }

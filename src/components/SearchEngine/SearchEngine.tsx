@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import SearchEngineStyled from "./Styled";
 import logo from "../../assets/img/GoogleLogo.png";
 import label from "../../assets/img/Search.svg";
@@ -5,6 +6,10 @@ import mic from "../../assets/img/Mic.svg";
 import camera from "../../assets/img/Camera.svg";
 
 function SearchEngine() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {}, []);
+
   return (
     <SearchEngineStyled>
       <div className="main__container">
@@ -16,7 +21,8 @@ function SearchEngine() {
         </div>
         <form
           action="#"
-          className="main__form">
+          className="main__form"
+          ref={formRef}>
           <div className="main__content">
             <div className="main__label">
               <img
@@ -29,6 +35,17 @@ function SearchEngine() {
               type="text"
               className="main__input"
               autoComplete="off"
+              onFocus={() => {
+                if (formRef.current) {
+                  formRef.current.style.boxShadow =
+                    "0 1px 6px rgba(32,33,36,.28)";
+                }
+              }}
+              onBlur={() => {
+                if (formRef.current !== null) {
+                  formRef.current.style.boxShadow = "none";
+                }
+              }}
             />
             <button
               type="button"

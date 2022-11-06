@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 const FooterStyled = styled.footer`
-  min-width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  width: 100%;
   background: #f2f2f2;
   color: #70757a;
 
   .footer__region {
     padding: 1.6rem 3rem;
-    border-bottom: 1px solid rgba(32, 33, 36, .1);
+    border-bottom: .1rem solid rgba(32, 33, 36, .1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    .footer__us {
+    .footer__country {
       font-size: 1.4rem;
     }
   }
