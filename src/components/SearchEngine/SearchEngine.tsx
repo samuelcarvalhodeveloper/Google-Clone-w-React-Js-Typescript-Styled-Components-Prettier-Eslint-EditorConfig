@@ -34,7 +34,7 @@ function SearchEngine() {
             <input
               type="text"
               className="main__input"
-              autoComplete="off"
+              autoComplete="new-password"
               onFocus={() => {
                 if (formRef.current) {
                   formRef.current.style.boxShadow =
