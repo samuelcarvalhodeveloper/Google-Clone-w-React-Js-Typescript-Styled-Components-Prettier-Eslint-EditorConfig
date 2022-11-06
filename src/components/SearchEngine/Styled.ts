@@ -12,7 +12,7 @@ const SearchEngineStyled = styled.main`
   padding: 0 2rem;
 
   .main__container {
-    margin-top: 35%;
+    margin: 35% 0;
     width: 100%;
     display: flex;
     align-items: center;
