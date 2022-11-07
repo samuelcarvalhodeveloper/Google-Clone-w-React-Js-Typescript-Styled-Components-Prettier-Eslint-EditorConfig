@@ -21,6 +21,6 @@ body {
   outline: 0.3rem solid dodgerblue;
 }
 
-a:active {
-  background: none;
+:active {
+  outline: none;
 }
