@@ -96,6 +96,7 @@ const SearchEngineStyled = styled.main`
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
       }
 
       .main__redirect:hover {
