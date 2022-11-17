@@ -67,6 +67,7 @@ const SearchEngineStyled = styled.main`
           align-items: center;
           background: none;
           border: none;
+          cursor: pointer;
 
           img {
             width: 100%;
